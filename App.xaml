@@ -1,0 +1,20 @@
+﻿<Application x:Class="MeraCircuitBoard.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    StartupUri="View/CircuitBoard.xaml">
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+          
+        <ResourceDictionary Source="Resources/ApplicationToolbar.xaml"/>
+        <ResourceDictionary Source="Resources/CircuitPart.xaml"/>
+        <ResourceDictionary Source="Resources/ToolboxItem.xaml"/>
+        <ResourceDictionary Source="Resources/Toolbox.xaml"/>
+        <ResourceDictionary Source="Resources/Connection.xaml"/>
+        <ResourceDictionary Source="Resources/CircuitParts/CircuitPartsStencils.xaml"/>
+      
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>
+ 

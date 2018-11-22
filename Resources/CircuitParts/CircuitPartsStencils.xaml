@@ -1,0 +1,50 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:MeraCircuitBoard"
+                    xmlns:c="clr-namespace:MeraCircuitBoard.Controls">
+
+
+
+    <s:Toolbox x:Key="CircuitPartsStencils" ItemSize="80,80" SnapsToDevicePixels="True"
+             ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+        <ItemsControl.Items>
+
+            <Image x:Name ="hsc" Source="pack://application:,,,/Resources/Images/HSC.PNG">
+                <s:CircuitPart.ConnectorDecoratorTemplate>
+                    <ControlTemplate>
+                        <c:RelativePositionPanel Margin="-4">
+                            <s:Connector Name="hsc1" Orientation="Top" c:RelativePositionPanel.RelativePosition="0,0.5"/>
+                            <s:Connector Name="hsc2" Orientation="Left" c:RelativePositionPanel.RelativePosition="1,0.5"/>
+                        </c:RelativePositionPanel>
+                    </ControlTemplate>
+                </s:CircuitPart.ConnectorDecoratorTemplate>
+            </Image>
+
+            <Image x:Name ="hyc" Source="pack://application:,,,/Resources/Images/HYC.PNG">
+                <s:CircuitPart.ConnectorDecoratorTemplate>
+                    <ControlTemplate>
+                        <c:RelativePositionPanel Margin="-4">
+                            <s:Connector Name="hyc1" Orientation="Left" c:RelativePositionPanel.RelativePosition="0.25,0"/>
+                            <s:Connector Name="hyc2" Orientation="Right" c:RelativePositionPanel.RelativePosition="0.75,0"/>
+                            <s:Connector Name="hyc3"  Orientation="Bottom" c:RelativePositionPanel.RelativePosition="0.5,1"/>
+                        </c:RelativePositionPanel>
+                    </ControlTemplate>
+                </s:CircuitPart.ConnectorDecoratorTemplate>
+            </Image>
+            <Image x:Name ="stc" Source="pack://application:,,,/Resources/Images/STC.PNG">
+                <s:CircuitPart.ConnectorDecoratorTemplate>
+                    <ControlTemplate>
+                        <c:RelativePositionPanel Margin="-4">
+                            <s:Connector Name="stc1" Orientation="Left" c:RelativePositionPanel.RelativePosition="0.5,0.2"/>
+                            <s:Connector Name="stc2" Orientation="Top" c:RelativePositionPanel.RelativePosition="0,0.65"/>
+                            <s:Connector Name="stc3" Orientation="Right" c:RelativePositionPanel.RelativePosition="1,0.65"/>
+                        </c:RelativePositionPanel>
+                    </ControlTemplate>
+                </s:CircuitPart.ConnectorDecoratorTemplate>
+            </Image>
+
+        </ItemsControl.Items>
+    </s:Toolbox>
+</ResourceDictionary>
+
